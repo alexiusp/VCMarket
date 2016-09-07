@@ -1,6 +1,8 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-	  "outDir":"../../adminApp",
+    "rootDir":"src",
+	  "outDir":"www",
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
