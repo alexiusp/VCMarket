@@ -6,9 +6,13 @@ var session = require('express-session');
 var _port = (process.env.PORT || 5000);
 
 app.set('port', _port);
-app.use('/app', express.static(__dirname + '/app'));
-app.use('/adminApp', express.static(__dirname + '/adminApp'));
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
+app.use('/', express.static(__dirname + '/www'));
+app.use('/admin', express.static(__dirname + '/www/admin.html'));
+/*
+app.use('/app', express.static(__dirname + '/www/app'));
+app.use('/adminApp', express.static(__dirname + '/www/adminApp'));
+*/
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(session({

@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: '<h1>VCMarket configuration</h1>'
+  templateUrl: 'adminApp/html/index.html'
 })
 export class AppComponent { }

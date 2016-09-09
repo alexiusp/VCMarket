@@ -34,7 +34,8 @@ jspm_packages
 .node_repl_history
 
 #  compiled sources
-/www
+/www/app
+/www/adminApp
 
 # =========================
 # Operating System Files
