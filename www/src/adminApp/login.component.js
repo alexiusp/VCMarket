@@ -10,18 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var login_service_1 = require('./login.service');
-var AppComponent = (function () {
-    function AppComponent(login) {
-        this.login = login;
+var LoginComponent = (function () {
+    function LoginComponent(service) {
+        this.service = service;
     }
-    AppComponent = __decorate([
+    LoginComponent.prototype.onSubmit = function (formValue) {
+        this.service.login(formValue);
+    };
+    LoginComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'adminApp/html/index.html'
+            selector: 'login-page',
+            templateUrl: 'adminApp/html/login.html'
         }), 
         __metadata('design:paramtypes', [login_service_1.LoginService])
-    ], AppComponent);
-    return AppComponent;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LoginComponent = LoginComponent;
+//# sourceMappingURL=login.component.js.map

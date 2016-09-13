@@ -20,6 +20,7 @@ app.use(session({
 
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
 app.use('/', express.static(__dirname + '/www'));
+app.use('/admin', express.static(__dirname + '/www/admin.html'));
 app.use('/admin', admin);
 /*
 app.use('/app', express.static(__dirname + '/www/app'));

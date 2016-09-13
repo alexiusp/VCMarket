@@ -9,19 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var login_service_1 = require('./login.service');
-var AppComponent = (function () {
-    function AppComponent(login) {
-        this.login = login;
+var LoginService = (function () {
+    function LoginService() {
+        this.isLoggedIn = false;
+        this.isLoggedIn = false;
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'adminApp/html/index.html'
-        }), 
-        __metadata('design:paramtypes', [login_service_1.LoginService])
-    ], AppComponent);
-    return AppComponent;
+    LoginService.prototype.login = function (credentials) {
+        this.isLoggedIn = true;
+    };
+    ;
+    LoginService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], LoginService);
+    return LoginService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LoginService = LoginService;
+//# sourceMappingURL=login.service.js.map
