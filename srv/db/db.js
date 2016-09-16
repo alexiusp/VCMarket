@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 //var config = require('../config');
 
-var dbURI = 'mongodb://localhost/test';
+var dbURI = process.env.MONGODB_URI || 'mongodb://localhost/test';
 
 mongoose.connect(dbURI);
 

@@ -3,4 +3,7 @@ import { Parser } from './parser';
 
 @Injectable()
 export class ParserService {
+	getParsers() {
+		
+	}
 }

@@ -3,4 +3,5 @@ export class Parser {
 	login     : string;
 	password  : string;
 	timeout   : number;
+	lastrun		: Date;
 }
