@@ -1,4 +1,4 @@
-var mongoose = require('../db');
+var mongoose = require('mongoose');
 
 var SliceSchema = new mongoose.Schema({
   _id       : Number,

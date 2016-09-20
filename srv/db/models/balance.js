@@ -1,4 +1,4 @@
-var mongoose = require('../db');
+var mongoose = require('mongoose');
 
 var BalanceSchema = new mongoose.Schema({
   _id       : Number,

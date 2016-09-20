@@ -5,7 +5,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "dev_start": "concurrently \"npm run dev_build\" \"run.bat\"",
     "predev_start": "npm run clean",
     "cpx": "cpx \"src/**/*.{html,css,png,jpg}\" www",

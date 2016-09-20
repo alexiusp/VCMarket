@@ -1,4 +1,4 @@
-var mongoose = require('../db');
+var mongoose = require('mongoose');
 
 var ParserSchema = new mongoose.Schema({
   city      : { type: String, unique: true, required: true },
